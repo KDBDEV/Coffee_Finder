@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CoffeeFinder</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<header>
+		<h1>CoffeeFinder:</h1>
+		<!-- SEARCH BAR -->
+		<form class="search-bar">
+			<label for="query"></label>
+			<input type="text" id="query" placeholder="Baltimore,MD" required>
+			<button type="submit">Look For Coffee</button>
+		</form>
+	</header>
+
+	<main>
+		<!-- Map -->
+		<section class="map-container hidden">
+			<div id="map">
+			</div>
+		</section>
+		<!-- Results -->
+		<section>
+			<div class="results hidden"></div>
+		</section>
+	</main>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<!-- API key for Google maps -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhzMPUFxKG3VTooZrZ0ZKU_9zy3cCWJJE&callback=initAutocomplete&libraries=places">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+</body>
+
+</html>

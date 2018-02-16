@@ -1,0 +1,13 @@
+.hidden,
+#hidden {
+  display: none;
+}
+/* MAP */
+#map {
+  background-color: grey;
+  height: 350px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  max-width: 95%;
+  width: 577px;
+}
